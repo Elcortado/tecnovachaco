@@ -1,0 +1,673 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#060D1F">
+
+  <title>Tecnova | Tecnología que resuelve — Reparación de celulares, PC y desarrollo web</title>
+  <meta name="description" content="Tecnova: reparación y venta de celulares, soporte informático, accesorios tecnológicos y desarrollo de landing pages. Diagnóstico sin cargo y garantía escrita.">
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="Tecnova">
+  <meta property="og:title" content="Tecnova | Tecnología que resuelve">
+  <meta property="og:description" content="Reparación de celulares y PC, accesorios tecnológicos y landing pages. Diagnóstico sin cargo y garantía escrita.">
+  <meta property="og:image" content="assets/og-tecnova.jpg">
+  <meta property="og:url" content="https://www.tecnova.com.ar/">
+  <meta name="twitter:card" content="summary_large_image">
+
+  <!-- Favicon con el isotipo TN (SVG en línea, sin archivo externo) -->
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Cdefs%3E%3ClinearGradient id='g' x1='0' y1='0' x2='1' y2='1'%3E%3Cstop offset='0' stop-color='%232F6BFF'/%3E%3Cstop offset='1' stop-color='%2322D8F0'/%3E%3C/linearGradient%3E%3C/defs%3E%3Crect width='64' height='64' rx='14' fill='%23060D1F'/%3E%3Cg fill='none' stroke='url(%23g)' stroke-width='6' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M10 14h20'/%3E%3Cpath d='M20 14v36'/%3E%3Cpath d='M36 46V20l16 22V20'/%3E%3C/g%3E%3C/svg%3E">
+
+  <!-- Tipografías -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700;800&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+  <!-- Íconos -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+  <!-- Estilos propios -->
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body>
+  <a class="skip-link" href="#inicio">Saltar al contenido principal</a>
+
+  <!-- =====================================================================
+       1. HEADER FIJO
+       ===================================================================== -->
+  <header class="site-header" id="header">
+    <div class="container site-header__inner">
+
+      <!-- Logo de marca; el fallback horizontal mantiene el header estable -->
+      <a class="brand" href="#inicio" aria-label="Tecnova — ir al inicio">
+        <img class="brand__logo" src="assets/logo.jpeg" alt="Tecnova, tecnología que resuelve" data-logo width="200" height="88">
+        <!-- Fallback con isotipo TN si falta el archivo del logo -->
+        <span class="brand__fallback" aria-hidden="true">
+          <svg viewBox="0 0 64 64" role="img">
+            <defs>
+              <linearGradient id="tnHeader" x1="0" y1="0" x2="1" y2="1">
+                <stop offset="0" stop-color="#2F6BFF"/><stop offset="1" stop-color="#22D8F0"/>
+              </linearGradient>
+            </defs>
+            <g fill="none" stroke="url(#tnHeader)" stroke-width="6" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M10 14h20"/><path d="M20 14v36"/><path d="M36 46V20l16 22V20"/>
+            </g>
+          </svg>
+          <span class="brand__fallback-text"><strong>TECNOVA</strong><small>Tecnología que resuelve</small></span>
+        </span>
+      </a>
+
+      <!-- Navegación -->
+      <nav class="nav" id="nav" aria-label="Menú principal">
+        <ul class="nav__list">
+          <li><a class="nav__link" href="#inicio">Inicio</a></li>
+          <li><a class="nav__link" href="#servicios">Servicios</a></li>
+          <li><a class="nav__link" href="store.html">Store</a></li>
+          <li><a class="nav__link" href="#como-trabajamos">Cómo trabajamos</a></li>
+          <li><a class="nav__link" href="#nosotros">Nosotros</a></li>
+          <li><a class="nav__link" href="#preguntas">Preguntas</a></li>
+          <li><a class="nav__link" href="#contacto">Contacto</a></li>
+        </ul>
+      </nav>
+
+      <div class="site-header__actions">
+        <a class="btn btn--primary btn--sm" data-wa="presupuesto" href="#contacto">
+          <i class="fa-brands fa-whatsapp" aria-hidden="true"></i> Pedí tu presupuesto
+        </a>
+        <button class="nav-toggle" id="navToggle" type="button" aria-label="Abrir menú" aria-expanded="false" aria-controls="nav">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main id="inicio">
+
+    <!-- ===================================================================
+         2. HERO CARRUSEL (4 slides, uno por categoría)
+         =================================================================== -->
+    <section class="hero" data-hero tabindex="-1" aria-roledescription="carrusel" aria-label="Presentación de servicios Tecnova">
+      <div class="hero__bg" aria-hidden="true"></div>
+
+      <!-- Motivo de circuito con nodos circulares -->
+      <div class="hero__circuit" aria-hidden="true">
+        <svg viewBox="0 0 1440 900" preserveAspectRatio="xMidYMid slice">
+          <defs>
+            <linearGradient id="heroCircuitGradient" x1="0" y1="0" x2="1" y2="1">
+              <stop offset="0" stop-color="#2F6BFF"/><stop offset="1" stop-color="#22D8F0"/>
+            </linearGradient>
+          </defs>
+          <g class="circuit-stroke">
+            <path d="M-20 210 H360 L470 320 H760"/>
+            <path d="M1460 120 H1120 L1000 240 H800"/>
+            <path d="M-20 700 H280 L400 590 H620"/>
+            <path d="M1460 760 H1180 L1060 660 H880"/>
+          </g>
+          <g class="circuit-node">
+            <circle cx="760" cy="320" r="7"/><circle cx="800" cy="240" r="7"/>
+            <circle cx="620" cy="590" r="7"/><circle cx="880" cy="660" r="7"/>
+          </g>
+        </svg>
+      </div>
+
+      <div class="container">
+        <div class="hero__viewport">
+
+          <!-- Slide 1 · Tecnova Mobile -->
+          <article class="hero__slide is-active" aria-roledescription="slide" aria-label="1 de 4: Tecnova Mobile">
+            <div class="hero__content">
+              <span class="hero__badge"><i class="fa-solid fa-mobile-screen-button" aria-hidden="true"></i> Tecnova Mobile</span>
+              <h1 class="hero__title">Reparación y venta de <span class="text-gradient">celulares y accesorios</span></h1>
+              <p class="hero__text">Cambio de módulo, batería, pin de carga y liberaciones. Diagnóstico sin cargo y garantía escrita en todas las reparaciones.</p>
+              <div class="hero__actions">
+                <a class="btn btn--primary" data-wa="mobile" href="#contacto"><i class="fa-brands fa-whatsapp" aria-hidden="true"></i> Consultar por mi celular</a>
+                <a class="btn btn--outline" href="#contacto">Contactanos</a>
+              </div>
+            </div>
+            <div class="hero__media">
+              <img src="https://placehold.co/900x700/0F1B3D/22D8F0?text=Tecnova+Mobile" alt="Técnico reparando un teléfono celular en el taller de Tecnova" width="900" height="700">
+            </div>
+          </article>
+
+          <!-- Slide 2 · Tecnova PC -->
+          <article class="hero__slide" aria-roledescription="slide" aria-label="2 de 4: Tecnova PC">
+            <div class="hero__content">
+              <span class="hero__badge"><i class="fa-solid fa-laptop" aria-hidden="true"></i> Tecnova PC</span>
+              <h1 class="hero__title">Reparación y <span class="text-gradient">soporte informático</span></h1>
+              <p class="hero__text">Formateo, instalación de SSD, limpieza por ultrasonido, recuperación de datos y soporte remoto o presencial.</p>
+              <div class="hero__actions">
+                <a class="btn btn--primary" data-wa="pc" href="#contacto"><i class="fa-brands fa-whatsapp" aria-hidden="true"></i> Quiero soporte técnico</a>
+                <a class="btn btn--outline" href="#contacto">Contactanos</a>
+              </div>
+            </div>
+            <div class="hero__media">
+              <img src="https://placehold.co/900x700/0F1B3D/22D8F0?text=Tecnova+PC" alt="Reparación de notebooks y computadoras de escritorio en Tecnova" loading="lazy" width="900" height="700">
+            </div>
+          </article>
+
+          <!-- Slide 3 · Tecnova Store -->
+          <article class="hero__slide" aria-roledescription="slide" aria-label="3 de 4: Tecnova Store">
+            <div class="hero__content">
+              <span class="hero__badge"><i class="fa-solid fa-cart-shopping" aria-hidden="true"></i> Tecnova Store</span>
+              <h1 class="hero__title">Accesorios y <span class="text-gradient">productos tecnológicos</span></h1>
+              <p class="hero__text">Fundas, cargadores, auriculares, vidrios templados y más. Stock permanente, productos originales y precios claros.</p>
+              <div class="hero__actions">
+                <a class="btn btn--primary" href="store.html"><i class="fa-solid fa-bag-shopping" aria-hidden="true"></i> Ver la tienda</a>
+                <a class="btn btn--outline" href="#contacto">Contactanos</a>
+              </div>
+            </div>
+            <div class="hero__media">
+              <img src="https://placehold.co/900x700/0F1B3D/22D8F0?text=Tecnova+Store" alt="Accesorios y productos tecnológicos disponibles en Tecnova Store" loading="lazy" width="900" height="700">
+            </div>
+          </article>
+
+          <!-- Slide 4 · Tecnova Web -->
+          <article class="hero__slide" aria-roledescription="slide" aria-label="4 de 4: Tecnova Web">
+            <div class="hero__content">
+              <span class="hero__badge"><i class="fa-solid fa-code" aria-hidden="true"></i> Tecnova Web</span>
+              <h1 class="hero__title">Desarrollo de <span class="text-gradient">landing pages</span> y soluciones digitales</h1>
+              <p class="hero__text">Sitios rápidos, optimizados para Google y pensados para vender. Diseño a medida, hosting y dominio incluidos.</p>
+              <div class="hero__actions">
+                <a class="btn btn--primary" data-wa="web" href="#contacto"><i class="fa-brands fa-whatsapp" aria-hidden="true"></i> Quiero mi landing page</a>
+                <a class="btn btn--outline" href="#contacto">Contactanos</a>
+              </div>
+            </div>
+            <div class="hero__media">
+              <img src="https://placehold.co/900x700/0F1B3D/22D8F0?text=Tecnova+Web" alt="Diseño y desarrollo de landing pages y soluciones digitales" loading="lazy" width="900" height="700">
+            </div>
+          </article>
+
+        </div>
+
+        <!-- Controles -->
+        <div class="carousel-nav">
+          <div class="carousel-arrows">
+            <button class="carousel-arrow" type="button" data-hero-prev aria-label="Slide anterior">
+              <i class="fa-solid fa-chevron-left" aria-hidden="true"></i>
+            </button>
+            <button class="carousel-arrow" type="button" data-hero-next aria-label="Slide siguiente">
+              <i class="fa-solid fa-chevron-right" aria-hidden="true"></i>
+            </button>
+          </div>
+          <div class="carousel-dots" data-hero-dots role="tablist" aria-label="Seleccionar slide"></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================================================================
+         3. SERVICIOS
+         =================================================================== -->
+    <section class="section section--divider" id="servicios">
+      <div class="container">
+        <header class="section__head section__head--center reveal">
+          <span class="eyebrow">Nuestros servicios</span>
+          <h2 class="section__title">Todo lo que hacemos <span class="text-gradient">por tu tecnología</span></h2>
+          <p class="section__text">Cuatro unidades especializadas, un mismo estándar de calidad y atención personalizada.</p>
+        </header>
+
+        <div class="grid grid--4">
+
+          <article class="card reveal">
+            <span class="icon-badge"><i class="fa-solid fa-mobile-screen-button" aria-hidden="true"></i></span>
+            <h3 class="card__title">Tecnova Mobile</h3>
+            <p class="card__text">Reparación de celulares, venta de equipos y accesorios con respaldo técnico.</p>
+            <ul class="check-list">
+              <li>Cambio de módulo y batería</li>
+              <li>Reparación de pin de carga</li>
+              <li>Venta de celulares nuevos</li>
+              <li>Accesorios originales</li>
+            </ul>
+            <div class="card__footer">
+              <a class="btn btn--primary btn--sm" data-wa="mobile" href="#contacto">Consultar</a>
+            </div>
+          </article>
+
+          <article class="card reveal">
+            <span class="icon-badge"><i class="fa-solid fa-laptop-medical" aria-hidden="true"></i></span>
+            <h3 class="card__title">Tecnova PC</h3>
+            <p class="card__text">Reparación y soporte informático para hogares, comercios y oficinas.</p>
+            <ul class="check-list">
+              <li>Formateo e instalación de Windows</li>
+              <li>Cambio a disco SSD y ampliación de RAM</li>
+              <li>Limpieza y cambio de pasta térmica</li>
+              <li>Soporte remoto y presencial</li>
+            </ul>
+            <div class="card__footer">
+              <a class="btn btn--primary btn--sm" data-wa="pc" href="#contacto">Consultar</a>
+            </div>
+          </article>
+
+          <article class="card card--featured reveal">
+            <span class="icon-badge"><i class="fa-solid fa-cart-shopping" aria-hidden="true"></i></span>
+            <h3 class="card__title">Tecnova Store</h3>
+            <p class="card__text">Accesorios y productos tecnológicos seleccionados por su calidad.</p>
+            <ul class="check-list">
+              <li>Fundas y vidrios templados</li>
+              <li>Cargadores y cables reforzados</li>
+              <li>Auriculares con y sin cable</li>
+              <li>Almacenamiento y periféricos</li>
+            </ul>
+            <div class="card__footer">
+              <a class="btn btn--primary btn--sm" href="store.html">Ver productos</a>
+            </div>
+          </article>
+
+          <article class="card reveal">
+            <span class="icon-badge"><i class="fa-solid fa-code" aria-hidden="true"></i></span>
+            <h3 class="card__title">Tecnova Web</h3>
+            <p class="card__text">Desarrollo de landing pages y soluciones digitales que convierten visitas en clientes.</p>
+            <ul class="check-list">
+              <li>Diseño responsive a medida</li>
+              <li>Optimización SEO y velocidad</li>
+              <li>Integración con WhatsApp</li>
+              <li>Hosting, dominio y soporte</li>
+            </ul>
+            <div class="card__footer">
+              <a class="btn btn--primary btn--sm" data-wa="web" href="#contacto">Consultar</a>
+            </div>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================================================================
+         4. STORE — Ofertas destacadas (carrusel de 6 productos)
+         =================================================================== -->
+    <section class="section section--alt section--divider" id="store">
+      <div class="container">
+        <header class="section__head section__head--center reveal">
+          <span class="eyebrow">Tecnova Store</span>
+          <h2 class="section__title">Ofertas <span class="text-gradient">destacadas</span></h2>
+          <p class="section__text">Descuentos vigentes por tiempo limitado. Consultanos por stock y disponibilidad de color.</p>
+        </header>
+
+        <div class="carousel reveal" data-offers>
+          <div class="carousel__viewport">
+            <ul class="carousel__track" id="offersTrack" aria-label="Productos en oferta"></ul>
+          </div>
+
+          <div class="carousel__controls">
+            <button class="carousel__arrow" type="button" data-offers-prev aria-label="Ofertas anteriores">
+              <i class="fa-solid fa-chevron-left" aria-hidden="true"></i>
+            </button>
+            <div class="carousel-dots" data-offers-dots aria-label="Seleccionar grupo de ofertas"></div>
+            <button class="carousel__arrow" type="button" data-offers-next aria-label="Ofertas siguientes">
+              <i class="fa-solid fa-chevron-right" aria-hidden="true"></i>
+            </button>
+          </div>
+        </div>
+
+        <div class="carousel__cta reveal">
+          <a class="btn btn--primary btn--lg" href="store.html">
+            <i class="fa-solid fa-store" aria-hidden="true"></i> Ver todos los productos
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================================================================
+         5. ¿CÓMO TRABAJAMOS? — línea de tiempo con estilo circuito
+         =================================================================== -->
+    <section class="section section--divider" id="como-trabajamos">
+      <div class="container">
+        <header class="section__head section__head--center reveal">
+          <span class="eyebrow">Cómo trabajamos</span>
+          <h2 class="section__title">Un proceso <span class="text-gradient">claro y sin sorpresas</span></h2>
+          <p class="section__text">Cuatro pasos simples: desde tu primera consulta hasta la entrega con garantía escrita.</p>
+        </header>
+
+        <ol class="timeline">
+          <li class="timeline__step reveal">
+            <span class="timeline__node"><i class="fa-solid fa-comments" aria-hidden="true"></i></span>
+            <div>
+              <span class="timeline__num">Paso 01</span>
+              <h3 class="timeline__title">Consulta</h3>
+              <p class="timeline__text">Nos contás el problema por WhatsApp o te acercás al local. Te respondemos en el momento.</p>
+            </div>
+          </li>
+          <li class="timeline__step reveal">
+            <span class="timeline__node"><i class="fa-solid fa-magnifying-glass-chart" aria-hidden="true"></i></span>
+            <div>
+              <span class="timeline__num">Paso 02</span>
+              <h3 class="timeline__title">Diagnóstico y presupuesto</h3>
+              <p class="timeline__text">Revisamos el equipo sin cargo y te damos un presupuesto claro antes de empezar.</p>
+            </div>
+          </li>
+          <li class="timeline__step reveal">
+            <span class="timeline__node"><i class="fa-solid fa-screwdriver-wrench" aria-hidden="true"></i></span>
+            <div>
+              <span class="timeline__num">Paso 03</span>
+              <h3 class="timeline__title">Reparación o desarrollo</h3>
+              <p class="timeline__text">Trabajamos con repuestos de calidad y te avisamos el avance en cada etapa del trabajo.</p>
+            </div>
+          </li>
+          <li class="timeline__step reveal">
+            <span class="timeline__node"><i class="fa-solid fa-shield-halved" aria-hidden="true"></i></span>
+            <div>
+              <span class="timeline__num">Paso 04</span>
+              <h3 class="timeline__title">Entrega y garantía</h3>
+              <p class="timeline__text">Probamos todo con vos y te entregamos la garantía escrita. Si algo falla, lo revisamos sin costo.</p>
+            </div>
+          </li>
+        </ol>
+      </div>
+    </section>
+
+    <!-- ===================================================================
+         6. ¿POR QUÉ ELEGIRNOS? + contadores
+         =================================================================== -->
+    <section class="section section--alt section--divider" id="nosotros">
+      <div class="container">
+        <header class="section__head section__head--center reveal">
+          <span class="eyebrow">Por qué elegirnos</span>
+          <h2 class="section__title">Seis razones para <span class="text-gradient">confiar en Tecnova</span></h2>
+          <p class="section__text">Más de una década resolviendo problemas tecnológicos con la misma premisa: hacerlo bien la primera vez.</p>
+        </header>
+
+        <div class="grid grid--3">
+          <article class="card benefit reveal">
+            <span class="icon-badge"><i class="fa-solid fa-stethoscope" aria-hidden="true"></i></span>
+            <div>
+              <h3 class="benefit__title">Diagnóstico sin cargo</h3>
+              <p class="benefit__text">Revisamos tu equipo y te decimos qué tiene antes de que pagues nada.</p>
+            </div>
+          </article>
+
+          <article class="card benefit reveal">
+            <span class="icon-badge"><i class="fa-solid fa-file-shield" aria-hidden="true"></i></span>
+            <div>
+              <h3 class="benefit__title">Garantía escrita</h3>
+              <p class="benefit__text">Todas las reparaciones y productos incluyen garantía documentada.</p>
+            </div>
+          </article>
+
+          <article class="card benefit reveal">
+            <span class="icon-badge"><i class="fa-solid fa-microchip" aria-hidden="true"></i></span>
+            <div>
+              <h3 class="benefit__title">Repuestos de calidad</h3>
+              <p class="benefit__text">Trabajamos con insumos originales o equivalentes de primera línea.</p>
+            </div>
+          </article>
+
+          <article class="card benefit reveal">
+            <span class="icon-badge"><i class="fa-solid fa-bolt" aria-hidden="true"></i></span>
+            <div>
+              <h3 class="benefit__title">Tiempos rápidos</h3>
+              <p class="benefit__text">La mayoría de las reparaciones se entregan en el día o en 48 horas.</p>
+            </div>
+          </article>
+
+          <article class="card benefit reveal">
+            <span class="icon-badge"><i class="fa-solid fa-user-check" aria-hidden="true"></i></span>
+            <div>
+              <h3 class="benefit__title">Atención personalizada</h3>
+              <p class="benefit__text">Hablás siempre con la misma persona que revisa tu equipo.</p>
+            </div>
+          </article>
+
+          <article class="card benefit reveal">
+            <span class="icon-badge"><i class="fa-solid fa-tags" aria-hidden="true"></i></span>
+            <div>
+              <h3 class="benefit__title">Precios claros</h3>
+              <p class="benefit__text">Presupuestos detallados, sin cargos ocultos ni sorpresas al retirar.</p>
+            </div>
+          </article>
+        </div>
+
+        <!-- Franja de contadores animados -->
+        <div class="stats reveal">
+          <div class="stat">
+            <span class="stat__value text-gradient" data-counter="1500" data-suffix="+">0</span>
+            <span class="stat__label">Equipos reparados</span>
+          </div>
+          <div class="stat">
+            <span class="stat__value text-gradient" data-counter="100" data-suffix="+">0</span>
+            <span class="stat__label">Webs creadas</span>
+          </div>
+          <div class="stat">
+            <span class="stat__value text-gradient" data-counter="98" data-suffix="%">0</span>
+            <span class="stat__label">Clientes satisfechos</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================================================================
+         7. PREGUNTAS FRECUENTES
+         =================================================================== -->
+    <section class="section section--divider" id="preguntas">
+      <div class="container">
+        <header class="section__head section__head--center reveal">
+          <span class="eyebrow">Preguntas frecuentes</span>
+          <h2 class="section__title">Todo lo que <span class="text-gradient">nos preguntan</span> siempre</h2>
+        </header>
+
+        <div class="faq">
+          <div class="faq__item reveal">
+            <h3><button class="faq__question" type="button" aria-expanded="false" aria-controls="faq1">¿Cuánto tarda una reparación?<i class="fa-solid fa-plus faq__icon" aria-hidden="true"></i></button></h3>
+            <div class="faq__answer" id="faq1"><div class="faq__answer-inner">La mayoría de los cambios de módulo, batería o pin de carga se entregan el mismo día. Si hay que pedir un repuesto específico, puede demorar entre 24 y 72 horas. Siempre te confirmamos el plazo antes de arrancar.</div></div>
+          </div>
+
+          <div class="faq__item reveal">
+            <h3><button class="faq__question" type="button" aria-expanded="false" aria-controls="faq2">¿Las reparaciones tienen garantía?<i class="fa-solid fa-plus faq__icon" aria-hidden="true"></i></button></h3>
+            <div class="faq__answer" id="faq2"><div class="faq__answer-inner">Sí. Todas nuestras reparaciones incluyen garantía escrita que cubre el repuesto colocado y la mano de obra. Los productos de la tienda tienen además la garantía del fabricante.</div></div>
+          </div>
+
+          <div class="faq__item reveal">
+            <h3><button class="faq__question" type="button" aria-expanded="false" aria-controls="faq3">¿Qué formas de pago aceptan?<i class="fa-solid fa-plus faq__icon" aria-hidden="true"></i></button></h3>
+            <div class="faq__answer" id="faq3"><div class="faq__answer-inner">Efectivo, transferencia bancaria, tarjetas de débito y crédito (con posibilidad de cuotas según el banco) y billeteras virtuales. Consultanos por promociones vigentes.</div></div>
+          </div>
+
+          <div class="faq__item reveal">
+            <h3><button class="faq__question" type="button" aria-expanded="false" aria-controls="faq4">¿Hacen retiro y entrega a domicilio?<i class="fa-solid fa-plus faq__icon" aria-hidden="true"></i></button></h3>
+            <div class="faq__answer" id="faq4"><div class="faq__answer-inner">Sí, coordinamos retiro y entrega a domicilio dentro de la zona. Para notebooks y PC de escritorio también ofrecemos soporte remoto cuando el problema es de software.</div></div>
+          </div>
+
+          <div class="faq__item reveal">
+            <h3><button class="faq__question" type="button" aria-expanded="false" aria-controls="faq5">¿Qué pasa si mi equipo no tiene arreglo?<i class="fa-solid fa-plus faq__icon" aria-hidden="true"></i></button></h3>
+            <div class="faq__answer" id="faq5"><div class="faq__answer-inner">Te lo informamos con sinceridad y sin costo. Si el arreglo no es conveniente, te devolvemos el equipo sin cargo y te asesoramos sobre las mejores opciones: recuperar tus datos o renovar el equipo.</div></div>
+          </div>
+
+          <div class="faq__item reveal">
+            <h3><button class="faq__question" type="button" aria-expanded="false" aria-controls="faq6">¿Cuánto demora una landing page?<i class="fa-solid fa-plus faq__icon" aria-hidden="true"></i></button></h3>
+            <div class="faq__answer" id="faq6"><div class="faq__answer-inner">Una landing page estándar se entrega en 7 a 10 días hábiles, incluyendo diseño, desarrollo, integración con WhatsApp y publicación con dominio propio. Proyectos más grandes se cotizan aparte.</div></div>
+          </div>
+
+          <div class="faq__item reveal">
+            <h3><button class="faq__question" type="button" aria-expanded="false" aria-controls="faq7">¿El diagnóstico tiene costo?<i class="fa-solid fa-plus faq__icon" aria-hidden="true"></i></button></h3>
+            <div class="faq__answer" id="faq7"><div class="faq__answer-inner">No, el diagnóstico es sin cargo y sin compromiso. Si decidís reparar con nosotros, el presupuesto que te dimos es el precio final.</div></div>
+          </div>
+
+          <div class="faq__item reveal">
+            <h3><button class="faq__question" type="button" aria-expanded="false" aria-controls="faq8">¿Trabajan con todas las marcas?<i class="fa-solid fa-plus faq__icon" aria-hidden="true"></i></button></h3>
+            <div class="faq__answer" id="faq8"><div class="faq__answer-inner">Sí: Samsung, Apple, Motorola, Xiaomi, Huawei, TCL, Honor y más. En informática trabajamos con todas las marcas de notebooks y PC de escritorio, tanto con Windows como con macOS o Linux.</div></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================================================================
+         8. CONTACTO Y UBICACIÓN
+         =================================================================== -->
+    <section class="section section--alt section--divider" id="contacto">
+      <div class="container">
+        <header class="section__head section__head--center reveal">
+          <span class="eyebrow">Contacto</span>
+          <h2 class="section__title">Contanos <span class="text-gradient">qué necesitás</span></h2>
+          <p class="section__text">Completá el formulario y te respondemos por WhatsApp en minutos.</p>
+        </header>
+
+        <div class="contact-grid">
+
+          <!-- Columna izquierda: formulario -->
+          <div class="card reveal">
+            <form class="form" id="contactForm" novalidate>
+              <div class="field">
+                <label for="nombre">Nombre y apellido</label>
+                <input type="text" id="nombre" name="nombre" placeholder="Ej.: Juan Pérez" autocomplete="name" required>
+                <span class="field__error" aria-live="polite"></span>
+              </div>
+
+              <div class="field">
+                <label for="telefono">Teléfono</label>
+                <input type="tel" id="telefono" name="telefono" placeholder="Ej.: 11 5555-5555" autocomplete="tel" required>
+                <span class="field__error" aria-live="polite"></span>
+              </div>
+
+              <div class="field">
+                <label for="servicio">Servicio de interés</label>
+                <select id="servicio" name="servicio" required>
+                  <option value="">Elegí una opción</option>
+                  <option value="Tecnova Mobile">Tecnova Mobile — Reparación y venta de celulares</option>
+                  <option value="Tecnova PC">Tecnova PC — Reparación y soporte informático</option>
+                  <option value="Tecnova Store">Tecnova Store — Accesorios y productos</option>
+                  <option value="Tecnova Web">Tecnova Web — Landing pages y soluciones digitales</option>
+                </select>
+                <span class="field__error" aria-live="polite"></span>
+              </div>
+
+              <div class="field">
+                <label for="mensaje">Mensaje <span aria-hidden="true">(opcional)</span></label>
+                <textarea id="mensaje" name="mensaje" placeholder="Contanos el modelo del equipo y qué le pasa…"></textarea>
+                <span class="field__error" aria-live="polite"></span>
+              </div>
+
+              <button class="btn btn--primary btn--lg btn--block" type="submit">
+                <i class="fa-brands fa-whatsapp" aria-hidden="true"></i> Enviar por WhatsApp
+              </button>
+              <p class="form__status" id="formStatus" role="status" aria-live="polite"></p>
+            </form>
+          </div>
+
+          <!-- Columna derecha: mapa + datos -->
+          <div class="reveal">
+            <div class="map">
+              <!-- Reemplazá el src por el de tu negocio (Google Maps → Compartir → Insertar mapa) -->
+              <iframe
+                title="Ubicación de Tecnova en el mapa"
+                src="https://www.google.com/maps?q=Buenos+Aires,+Argentina&output=embed"
+                loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"
+                allowfullscreen></iframe>
+            </div>
+
+            <ul class="info-list">
+              <li class="info-item">
+                <i class="fa-solid fa-location-dot" aria-hidden="true"></i>
+                <div><strong>Dirección</strong><span data-config="direccion">Av. Tecnológica 1234, CABA, Argentina</span></div>
+              </li>
+              <li class="info-item">
+                <i class="fa-solid fa-phone" aria-hidden="true"></i>
+                <div><strong>Teléfono / WhatsApp</strong><a data-config="telefono" href="#" target="_blank" rel="noopener">+54 9 11 0000-0000</a></div>
+              </li>
+              <li class="info-item">
+                <i class="fa-solid fa-envelope" aria-hidden="true"></i>
+                <div><strong>Email</strong><a data-config="email" href="mailto:hola@tecnova.com.ar">hola@tecnova.com.ar</a></div>
+              </li>
+              <li class="info-item">
+                <i class="fa-regular fa-clock" aria-hidden="true"></i>
+                <div>
+                  <strong>Horarios de atención</strong>
+                  <ul data-horarios></ul>
+                </div>
+              </li>
+            </ul>
+          </div>
+
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- =====================================================================
+       9. FOOTER
+       ===================================================================== -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+
+        <div>
+          <a class="brand" href="#inicio" aria-label="Tecnova — ir al inicio">
+            <img class="brand__logo" src="assets/logo.jpeg" alt="Tecnova, tecnología que resuelve" data-logo width="180" height="80">
+            <span class="brand__fallback" aria-hidden="true">
+              <svg viewBox="0 0 64 64" role="img">
+                <defs>
+                  <linearGradient id="tnFooter" x1="0" y1="0" x2="1" y2="1">
+                    <stop offset="0" stop-color="#2F6BFF"/><stop offset="1" stop-color="#22D8F0"/>
+                  </linearGradient>
+                </defs>
+                <g fill="none" stroke="url(#tnFooter)" stroke-width="6" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M10 14h20"/><path d="M20 14v36"/><path d="M36 46V20l16 22V20"/>
+                </g>
+              </svg>
+              <span class="brand__fallback-text"><strong>TECNOVA</strong><small>Tecnología que resuelve</small></span>
+            </span>
+          </a>
+          <p class="footer__text">Reparación de celulares y PC, venta de accesorios y desarrollo web. Diagnóstico sin cargo y garantía escrita en cada trabajo.</p>
+
+          <div class="socials">
+            <a href="#" data-social="instagram" target="_blank" rel="noopener" aria-label="Instagram de Tecnova"><i class="fa-brands fa-instagram" aria-hidden="true"></i></a>
+            <a href="#" data-social="facebook" target="_blank" rel="noopener" aria-label="Facebook de Tecnova"><i class="fa-brands fa-facebook-f" aria-hidden="true"></i></a>
+            <a class="is-whatsapp" href="#" data-social="whatsapp" target="_blank" rel="noopener" aria-label="WhatsApp de Tecnova"><i class="fa-brands fa-whatsapp" aria-hidden="true"></i></a>
+            <a href="#" data-social="tiktok" target="_blank" rel="noopener" aria-label="TikTok de Tecnova"><i class="fa-brands fa-tiktok" aria-hidden="true"></i></a>
+          </div>
+        </div>
+
+        <nav aria-label="Enlaces rápidos">
+          <h2 class="footer__title">Enlaces rápidos</h2>
+          <ul class="footer__list">
+            <li><a href="#inicio">Inicio</a></li>
+            <li><a href="#servicios">Servicios</a></li>
+            <li><a href="#como-trabajamos">Cómo trabajamos</a></li>
+            <li><a href="#nosotros">Por qué elegirnos</a></li>
+            <li><a href="#preguntas">Preguntas frecuentes</a></li>
+            <li><a href="#contacto">Contacto</a></li>
+          </ul>
+        </nav>
+
+        <nav aria-label="Categorías de servicio">
+          <h2 class="footer__title">Nuestras unidades</h2>
+          <ul class="footer__list">
+            <li><a href="#servicios">Tecnova Mobile</a></li>
+            <li><a href="#servicios">Tecnova PC</a></li>
+            <li><a href="store.html">Tecnova Store</a></li>
+            <li><a href="#servicios">Tecnova Web</a></li>
+          </ul>
+        </nav>
+
+        <div>
+          <h2 class="footer__title">Contacto</h2>
+          <ul class="footer__list">
+            <li><a data-config="direccion" href="#contacto">Av. Tecnológica 1234, CABA</a></li>
+            <li><a data-config="telefono" href="#" target="_blank" rel="noopener">+54 9 11 0000-0000</a></li>
+            <li><a data-config="email" href="mailto:hola@tecnova.com.ar">hola@tecnova.com.ar</a></li>
+            <li><span class="footer__text">Lun a vie 9:00 a 19:00 · Sáb 10:00 a 14:00</span></li>
+          </ul>
+        </div>
+
+      </div>
+
+      <div class="footer__bottom">
+        <p>© 2026 Tecnova. Todos los derechos reservados.</p>
+        <p>Diseño y desarrollo por <a href="store.html">Tecnova Web</a></p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- =====================================================================
+       10. BOTÓN FLOTANTE DE WHATSAPP
+       ===================================================================== -->
+  <a class="wa-float" href="#" data-wa="general" aria-label="Escribinos por WhatsApp">
+    <i class="fa-brands fa-whatsapp" aria-hidden="true"></i>
+    <span class="wa-float__tooltip">¿Necesitás ayuda?</span>
+  </a>
+
+  <!-- Scripts (sin frameworks) -->
+  <script src="js/products.js" defer></script>
+  <script src="js/main.js" defer></script>
+</body>
+</html>

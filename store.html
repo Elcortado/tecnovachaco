@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#060D1F">
+
+  <title>Tecnova Store | Accesorios y productos tecnológicos</title>
+  <meta name="description" content="Catálogo completo de Tecnova Store: fundas, cargadores y cables, auriculares, vidrios templados, almacenamiento y periféricos. Consultá por WhatsApp.">
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="Tecnova">
+  <meta property="og:title" content="Tecnova Store | Accesorios y productos tecnológicos">
+  <meta property="og:description" content="Fundas, cargadores, auriculares, vidrios templados, almacenamiento y periféricos con garantía.">
+  <meta property="og:image" content="assets/og-tecnova.jpg">
+  <meta property="og:url" content="https://www.tecnova.com.ar/store.html">
+  <meta name="twitter:card" content="summary_large_image">
+
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Cdefs%3E%3ClinearGradient id='g' x1='0' y1='0' x2='1' y2='1'%3E%3Cstop offset='0' stop-color='%232F6BFF'/%3E%3Cstop offset='1' stop-color='%2322D8F0'/%3E%3C/linearGradient%3E%3C/defs%3E%3Crect width='64' height='64' rx='14' fill='%23060D1F'/%3E%3Cg fill='none' stroke='url(%23g)' stroke-width='6' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M10 14h20'/%3E%3Cpath d='M20 14v36'/%3E%3Cpath d='M36 46V20l16 22V20'/%3E%3C/g%3E%3C/svg%3E">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700;800&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body>
+  <a class="skip-link" href="#catalogo">Saltar al catálogo</a>
+
+  <!-- HEADER (idéntico al de index.html) -->
+  <header class="site-header is-scrolled" id="header">
+    <div class="container site-header__inner">
+      <a class="brand" href="index.html" aria-label="Tecnova — ir al inicio">
+        <img class="brand__logo" src="assets/logo.jpeg" alt="Tecnova, tecnología que resuelve" data-logo width="200" height="88">
+        <span class="brand__fallback" aria-hidden="true">
+          <svg viewBox="0 0 64 64" role="img">
+            <defs>
+              <linearGradient id="tnHeaderStore" x1="0" y1="0" x2="1" y2="1">
+                <stop offset="0" stop-color="#2F6BFF"/><stop offset="1" stop-color="#22D8F0"/>
+              </linearGradient>
+            </defs>
+            <g fill="none" stroke="url(#tnHeaderStore)" stroke-width="6" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M10 14h20"/><path d="M20 14v36"/><path d="M36 46V20l16 22V20"/>
+            </g>
+          </svg>
+          <span class="brand__fallback-text"><strong>TECNOVA</strong><small>Tecnología que resuelve</small></span>
+        </span>
+      </a>
+
+      <nav class="nav" id="nav" aria-label="Menú principal">
+        <ul class="nav__list">
+          <li><a class="nav__link" href="index.html#inicio">Inicio</a></li>
+          <li><a class="nav__link" href="index.html#servicios">Servicios</a></li>
+          <li><a class="nav__link is-active" href="store.html">Store</a></li>
+          <li><a class="nav__link" href="index.html#como-trabajamos">Cómo trabajamos</a></li>
+          <li><a class="nav__link" href="index.html#nosotros">Nosotros</a></li>
+          <li><a class="nav__link" href="index.html#preguntas">Preguntas</a></li>
+          <li><a class="nav__link" href="index.html#contacto">Contacto</a></li>
+        </ul>
+      </nav>
+
+      <div class="site-header__actions">
+        <a class="btn btn--primary btn--sm" data-wa="presupuesto" href="index.html#contacto">
+          <i class="fa-brands fa-whatsapp" aria-hidden="true"></i> Pedí tu presupuesto
+        </a>
+        <button class="nav-toggle" id="navToggle" type="button" aria-label="Abrir menú" aria-expanded="false" aria-controls="nav">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <!-- ENCABEZADO DE PÁGINA -->
+    <section class="page-hero">
+      <div class="container">
+        <nav class="breadcrumb" aria-label="Ruta de navegación">
+          <a href="index.html">Inicio</a><span aria-hidden="true">/</span><span aria-current="page">Store</span>
+        </nav>
+        <span class="eyebrow">Catálogo online</span>
+        <h1 class="page-hero__title">Tecnova <span class="text-gradient">Store</span></h1>
+        <p class="page-hero__text">Accesorios y productos tecnológicos seleccionados por su calidad, con garantía y stock permanente. Elegí lo que necesitás y consultanos por WhatsApp: te confirmamos disponibilidad y coordinamos la entrega.</p>
+      </div>
+    </section>
+
+    <!-- CATÁLOGO -->
+    <section class="section" id="catalogo">
+      <div class="container">
+
+        <!-- Barra de búsqueda, filtros y orden -->
+        <div class="store-toolbar">
+          <div class="store-search">
+            <i class="fa-solid fa-magnifying-glass" aria-hidden="true"></i>
+            <label class="sr-only" for="buscador">Buscar productos</label>
+            <input type="search" id="buscador" placeholder="Buscar por producto, marca o categoría…" autocomplete="off">
+          </div>
+
+          <div class="chips" id="storeFilters" role="group" aria-label="Filtrar por categoría"></div>
+
+          <div class="store-toolbar__row">
+            <p class="store-results" id="storeResults" role="status" aria-live="polite"></p>
+            <div class="sort">
+              <label for="orden">Ordenar por</label>
+              <select id="orden">
+                <option value="relevancia">Recomendados</option>
+                <option value="precio-asc">Precio: menor a mayor</option>
+                <option value="precio-desc">Precio: mayor a menor</option>
+              </select>
+            </div>
+          </div>
+        </div>
+
+        <!-- Grilla generada con JavaScript desde js/products.js -->
+        <div class="store-grid" id="storeGrid"></div>
+
+        <!-- Estado vacío -->
+        <div class="store-empty" id="storeEmpty" hidden>
+          <i class="fa-solid fa-magnifying-glass-minus" aria-hidden="true"></i>
+          <h2 class="card__title">No se encontraron productos</h2>
+          <p class="section__text">Probá con otras palabras o quitá los filtros aplicados.</p>
+          <button class="btn btn--outline" type="button" id="limpiarFiltros">Limpiar filtros</button>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- FRANJA DE CONTACTO RÁPIDO -->
+    <section class="section section--alt section--divider">
+      <div class="container">
+        <div class="section__head section__head--center reveal" style="margin-bottom:0">
+          <span class="eyebrow">¿No encontrás lo que buscás?</span>
+          <h2 class="section__title">Pedinos lo que necesitás</h2>
+          <p class="section__text" style="margin-inline:auto">Trabajamos con pedidos especiales: si no está en el catálogo, lo conseguimos. Escribinos y te cotizamos en el día.</p>
+          <p style="margin-top:1.6rem">
+            <a class="btn btn--whatsapp btn--lg" data-wa="store" href="index.html#contacto">
+              <i class="fa-brands fa-whatsapp" aria-hidden="true"></i> Consultar por WhatsApp
+            </a>
+          </p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- FOOTER (idéntico al de index.html) -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+
+        <div>
+          <a class="brand" href="index.html" aria-label="Tecnova — ir al inicio">
+            <img class="brand__logo" src="assets/logo.jpeg" alt="Tecnova, tecnología que resuelve" data-logo width="180" height="80">
+            <span class="brand__fallback" aria-hidden="true">
+              <svg viewBox="0 0 64 64" role="img">
+                <defs>
+                  <linearGradient id="tnFooterStore" x1="0" y1="0" x2="1" y2="1">
+                    <stop offset="0" stop-color="#2F6BFF"/><stop offset="1" stop-color="#22D8F0"/>
+                  </linearGradient>
+                </defs>
+                <g fill="none" stroke="url(#tnFooterStore)" stroke-width="6" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M10 14h20"/><path d="M20 14v36"/><path d="M36 46V20l16 22V20"/>
+                </g>
+              </svg>
+              <span class="brand__fallback-text"><strong>TECNOVA</strong><small>Tecnología que resuelve</small></span>
+            </span>
+          </a>
+          <p class="footer__text">Reparación de celulares y PC, venta de accesorios y desarrollo web. Diagnóstico sin cargo y garantía escrita en cada trabajo.</p>
+
+          <div class="socials">
+            <a href="#" data-social="instagram" target="_blank" rel="noopener" aria-label="Instagram de Tecnova"><i class="fa-brands fa-instagram" aria-hidden="true"></i></a>
+            <a href="#" data-social="facebook" target="_blank" rel="noopener" aria-label="Facebook de Tecnova"><i class="fa-brands fa-facebook-f" aria-hidden="true"></i></a>
+            <a class="is-whatsapp" href="#" data-social="whatsapp" target="_blank" rel="noopener" aria-label="WhatsApp de Tecnova"><i class="fa-brands fa-whatsapp" aria-hidden="true"></i></a>
+            <a href="#" data-social="tiktok" target="_blank" rel="noopener" aria-label="TikTok de Tecnova"><i class="fa-brands fa-tiktok" aria-hidden="true"></i></a>
+          </div>
+        </div>
+
+        <nav aria-label="Enlaces rápidos">
+          <h2 class="footer__title">Enlaces rápidos</h2>
+          <ul class="footer__list">
+            <li><a href="index.html#inicio">Inicio</a></li>
+            <li><a href="index.html#servicios">Servicios</a></li>
+            <li><a href="store.html">Store</a></li>
+            <li><a href="index.html#contacto">Contacto</a></li>
+          </ul>
+        </nav>
+
+        <nav aria-label="Categorías de servicio">
+          <h2 class="footer__title">Nuestras unidades</h2>
+          <ul class="footer__list">
+            <li><a href="index.html#servicios">Tecnova Mobile</a></li>
+            <li><a href="index.html#servicios">Tecnova PC</a></li>
+            <li><a href="store.html">Tecnova Store</a></li>
+            <li><a href="index.html#servicios">Tecnova Web</a></li>
+          </ul>
+        </nav>
+
+        <div>
+          <h2 class="footer__title">Contacto</h2>
+          <ul class="footer__list">
+            <li><a data-config="direccion" href="index.html#contacto">Av. Tecnológica 1234, CABA</a></li>
+            <li><a data-config="telefono" href="#" target="_blank" rel="noopener">+54 9 11 0000-0000</a></li>
+            <li><a data-config="email" href="mailto:hola@tecnova.com.ar">hola@tecnova.com.ar</a></li>
+            <li><span class="footer__text">Lun a vie 9:00 a 19:00 · Sáb 10:00 a 14:00</span></li>
+          </ul>
+        </div>
+
+      </div>
+
+      <div class="footer__bottom">
+        <p>© 2026 Tecnova. Todos los derechos reservados.</p>
+        <p>Diseño y desarrollo por <a href="index.html#servicios">Tecnova Web</a></p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- BOTÓN FLOTANTE DE WHATSAPP -->
+  <a class="wa-float" href="#" data-wa="general" aria-label="Escribinos por WhatsApp">
+    <i class="fa-brands fa-whatsapp" aria-hidden="true"></i>
+    <span class="wa-float__tooltip">¿Necesitás ayuda?</span>
+  </a>
+
+  <script src="js/products.js" defer></script>
+  <script src="js/main.js" defer></script>
+  <script src="js/store.js" defer></script>
+</body>
+</html>
