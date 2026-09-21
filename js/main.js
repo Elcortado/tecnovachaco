@@ -13,19 +13,19 @@
     empresa: "Tecnova",
     eslogan: "Tecnología que resuelve",
     /* Número de WhatsApp en formato internacional, SIN + ni espacios */
-    whatsapp: "5491100000000",
-    telefonoVisible: "+54 9 11 0000-0000",
-    email: "hola@tecnova.com.ar",
-    direccion: "Av. Tecnológica 1234, CABA, Argentina",
+    whatsapp: "5493624216834",
+    telefonoVisible: "+54 9 362 421-6834",
+    email: "tecnovachaco@gmail.com",
+    direccion: "Av. Soberanía Nacional 2555, Resistencia, Chaco, Argentina",
     horarios: [
       { dia: "Lunes a viernes", horas: "9:00 a 19:00" },
       { dia: "Sábados", horas: "10:00 a 14:00" },
       { dia: "Domingos y feriados", horas: "Cerrado" }
     ],
     redes: {
-      instagram: "https://www.instagram.com/tecnova",
-      facebook: "https://www.facebook.com/tecnova",
-      tiktok: "https://www.tiktok.com/@tecnova"
+      instagram: "https://www.instagram.com/tecnovachaco/",
+      facebook: "https://www.facebook.com/profile.php?id=61594460734940",
+      tiktok: "https://www.tiktok.com/@tecnovachaco"
     },
     /* Reemplazá el src del iframe del mapa en index.html por el de tu negocio */
     /* Mensajes prellenados de WhatsApp por contexto */
