@@ -90,17 +90,18 @@ const TECNOVA_PRODUCTS = [
     descripcion: "5Amp, 45W, 1USb +  1TC, Cable C-C"
   },
 
-   /*  
+   
   {
     id: 7,
-    nombre: "Cable Lightning Certificado 1 m",
-    categoria: "Cargadores y cables",
-    precio: 11500,
+    nombre: "Parlante Gamer MAGSAFE",
+    categoria: "Auriculares y parlantes",
+    precio: 9800,
     precioAnterior: null,
     enOferta: false,
-    imagen: "https://placehold.co/640x480/0F1B3D/22D8F0?text=Cable+Lightning",
-    descripcion: "Chip original MFi, compatible con iPhone y iPad."
+    imagen: "assets/productos/auricularesParlantes/parlateGamerMagsafe.png",
+    descripcion: "Tipo C - Potencia: 3W - Negro/Naranja"
   },
+  /*
   {
     id: 8,
     nombre: "Cargador Inalámbrico 15W",
