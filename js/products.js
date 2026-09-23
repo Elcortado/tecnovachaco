@@ -101,38 +101,38 @@ const TECNOVA_PRODUCTS = [
     imagen: "assets/productos/auricularesParlantes/parlateGamerMagsafe.png",
     descripcion: "Tipo C - Potencia: 3W - Negro/Naranja"
   },
-  /*
+  
   {
     id: 8,
-    nombre: "Cargador Inalámbrico 15W",
+    nombre: "Cargador YEXA",
     categoria: "Cargadores y cables",
-    precio: 29900,
-    precioAnterior: 36900,
-    enOferta: true,
-    imagen: "https://placehold.co/640x480/0F1B3D/22D8F0?text=Carga+Inalambrica",
-    descripcion: "Base antideslizante con detección de objetos metálicos."
+    precio: 4500,
+    precioAnterior: null,
+    enOferta: false,
+    imagen: "assets/productos/cargadoresCables/cargadorUno.jpeg",
+    descripcion: "220V - 4.8 Amp - 1Usb + Cable V8"
   },
 
  
   {
     id: 9,
-    nombre: "Auriculares Bluetooth Pro ANC",
-    categoria: "Auriculares",
-    precio: 58900,
-    precioAnterior: 74900,
-    enOferta: true,
-    imagen: "https://placehold.co/640x480/0F1B3D/22D8F0?text=Auriculares+ANC",
-    descripcion: "Cancelación activa de ruido, 32 h de batería y estuche de carga."
+    nombre: "Cargador XAEA HYPERX 55W Carga rápida",
+    categoria: "Cargadores y cables",
+    precio: 14400,
+    precioAnterior: null,
+    enOferta: false,
+    imagen: "assets/productos/cargadoresCables/cargadorTres.jpeg",
+    descripcion: "220V - 5.4 Amp - 1 USB-C + 1 USB-A"
   },
   {
     id: 10,
-    nombre: "Auriculares In-Ear con Micrófono",
-    categoria: "Auriculares",
-    precio: 19900,
+    nombre: "Cargador XAEA EXTREME 65W Carga rápida",
+    categoria: "Cargadores y cables",
+    precio: 19400,
     precioAnterior: null,
     enOferta: false,
-    imagen: "https://placehold.co/640x480/0F1B3D/22D8F0?text=In-Ear+Mic",
-    descripcion: "Jack 3,5 mm o USB-C, control en línea y graves potenciados."
+    imagen: "assets/productos/cargadoresCables/cargadorCuatro.jpg",
+    descripcion: "220V - 6.2 Amp - 1 USB-C + 1 USB-A"
   },
   {
     id: 11,
@@ -239,7 +239,7 @@ const TECNOVA_PRODUCTS = [
     enOferta: false,
     imagen: "https://placehold.co/640x480/0F1B3D/22D8F0?text=Soporte+Notebook",
     descripcion: "Altura regulable en 6 posiciones, mejora la postura y la ventilación."
-  }  */
+  }  
 ];
 
 /* Exponemos los datos para que main.js y store.js los consuman */
