@@ -9,3 +9,5 @@ La página tecnova-web.html espera tres capturas por proyecto:
 Repetí la misma estructura para sitio-2, sitio-3, sitio-4, sitio-5 y sitio-6.
 
 Podés usar JPG, PNG o WebP; si cambiás la extensión o los nombres, actualizá el atributo data-images de la card correspondiente en tecnova-web.html. Mientras falte una captura, se muestra automáticamente una imagen de respaldo de Tecnova.
+
+Cada card también apunta inicialmente a assets/web/sitio-N/index.html mediante el botón “Visitar sitio”. Reemplazá ese href por la URL pública definitiva cuando cada proyecto esté publicado.
